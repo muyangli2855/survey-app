@@ -8,7 +8,7 @@ const app = express();
 const PORT = 5000;
 
 app.use(cors({
-  origin: "https://survey-frontend.vercel.app"  // 你的前端地址
+  origin: "https://survey-app-client-jet.vercel.app"  // 你的前端地址
 }));
 app.use(bodyParser.json());
 
