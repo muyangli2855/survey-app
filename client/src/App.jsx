@@ -16,7 +16,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/submit", form);
+      await axios.post("https://survey-app-server-bo9d.onrender.com/submit", form);
       setMessage("提交成功！");
       setForm({ name: "", age: "", feedback: "" });
     } catch {

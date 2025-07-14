@@ -7,7 +7,9 @@ const fs = require("fs");
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: "https://survey-frontend.vercel.app"  // 你的前端地址
+}));
 app.use(bodyParser.json());
 
 const FILE_PATH = "./responses.json";
